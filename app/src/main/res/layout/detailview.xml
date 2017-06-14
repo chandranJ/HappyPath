@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:text="Title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Description"
+        android:layout_below="@+id/titleview"
+        android:layout_alignStart="@+id/titleview"
+        android:layout_alignLeft="@+id/titleview"/>
+
+    <TextView
+        android:id="@+id/key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Key Result"
+        android:layout_below="@+id/des"
+        android:layout_alignStart="@+id/des"
+        android:layout_alignLeft="@+id/des"/>
+
+    <TextView
+        android:id="@+id/release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Release"
+        android:layout_below="@+id/key"
+        android:layout_alignStart="@+id/key"
+        android:layout_alignLeft="@+id/key"/>
+
+    <TextView
+        android:id="@+id/before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Before"
+        android:layout_below="@+id/release"
+        android:layout_alignStart="@+id/release"
+        android:layout_alignLeft="@+id/release"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/after"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/before"
+        android:layout_alignLeft="@+id/before"
+        android:layout_below="@+id/before"
+        android:layout_marginTop="15dp"
+        android:text="After" />
+
+    <TextView
+        android:id="@+id/savings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/after"
+        android:layout_alignLeft="@+id/after"
+        android:layout_below="@+id/after"
+        android:layout_marginTop="15dp"
+        android:text="Savings" />
+
+    <TextView
+        android:id="@+id/apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Applies To"
+        android:layout_below="@+id/savings"
+        android:layout_alignStart="@+id/savings"
+        android:layout_alignLeft="@+id/savings"/>
+
+    <TextView
+        android:id="@+id/region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Region"
+        android:layout_below="@+id/apply"
+        android:layout_alignStart="@+id/apply"
+        android:layout_alignLeft="@+id/apply"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/Target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Target Organization"
+        android:layout_below="@+id/region"
+        android:layout_alignStart="@+id/region"
+        android:layout_alignLeft="@+id/region"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tittletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_above="@+id/des"
+        android:layout_toEndOf="@+id/Target"
+        android:layout_toRightOf="@+id/Target"
+        />
+
+    <TextView
+        android:id="@+id/destext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tittletext"
+        android:layout_alignLeft="@+id/tittletext"
+        android:layout_alignTop="@+id/des"
+        android:text="TextView"/>
+    <TextView
+        android:id="@+id/keytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/destext"
+        android:layout_alignLeft="@+id/destext"
+        android:layout_alignTop="@+id/key"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/releasetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/keytext"
+        android:layout_alignRight="@+id/keytext"
+        android:layout_alignTop="@+id/release"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/beforetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/releasetext"
+        android:layout_alignRight="@+id/releasetext"
+        android:layout_alignTop="@+id/before"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/aftertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/beforetext"
+        android:layout_alignRight="@+id/beforetext"
+        android:layout_alignTop="@+id/after"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/savingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/aftertext"
+        android:layout_alignRight="@+id/aftertext"
+        android:layout_alignTop="@+id/savings"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/applytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/savingtext"
+        android:layout_alignLeft="@id/savingtext"
+        android:layout_alignTop="@+id/apply"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/regiontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/applytext"
+        android:layout_alignRight="@+id/applytext"
+        android:layout_alignTop="@+id/region"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/targettext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/regiontext"
+        android:layout_alignRight="@+id/regiontext"
+        android:layout_alignTop="@+id/Target"
+        android:text="TextView" />
+
+
+</RelativeLayout>
